@@ -5,28 +5,10 @@
 // ref: Using Google App Mail: https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server
 
 (function () {
-    const ScriptId = 'AKfycbzM04ouw1vGf5wOZs4106A95PUbfpahtJ-_7cOl1_vWFGw5xey4YLENbGbiyIgs0Xd2tw'
-    const URL = `https://script.google.com/macros/s/${ScriptId}/exec`
-
-    // Async function to send JSON data to Google Sheets via Google Apps Script
-    async function sendDataToGoogleApp(jsonData) {
-        try {
-            await fetch(URL, {
-                method: 'POST',
-                body: JSON.stringify(jsonData),
-                headers: { 'Content-Type': "text/plain;charset=utf-8" },
-                redirect: 'follow',
-            });
-        } catch (error) {
-            console.error('Error while sending data to Google App:', error);
-        }
-    }
-
     // Fetch visitor info using ipapi.co API
     async function getVisitorInfo() {
         let visitorInfo = {};
 
-        // Helper function to check if an object is empty
         function isEmpty(obj) {
             return Object.keys(obj).length === 0;
         }
@@ -51,14 +33,14 @@
                 url: 'https://ipinfo.io/json',
                 parse: (data) => ({
                     ip: data.ip,
-                    org: data.org.split(' ').slice(1).join(" "),
+                    org: data.org?.split(' ').slice(1).join(" ") ?? 'Unk',
                     city: data.city,
                     region: data.region,
                     country: data.country,
                     postal: data.postal,
-                    asn: data.org.split(' ')[0],
-                    latitude: data.loc.split(',')[0],
-                    longitude: data.loc.split(',')[1],
+                    asn: data.org?.split(' ')[0] ?? 'Unk',
+                    latitude: data.loc?.split(',')[0],
+                    longitude: data.loc?.split(',')[1],
                 }),
             },
             {
@@ -193,7 +175,6 @@
             info.os = `Android-${ua.match(/Android (\d+(\.\d+)?)/)?.[1] || 'Unk'}`;
         } else if (/Linux/.test(ua)) {
             let distro = 'Linux';
-            let de = 'Unk';
             let version = 'Unk';
 
             if (/Ubuntu/i.test(ua)) distro = 'Ubuntu';
@@ -204,7 +185,7 @@
             const versionMatch = ua.match(/(Ubuntu|Fedora|Debian)\/?(\d+[\.\d]*)/i);
             if (versionMatch) version = versionMatch[2];
 
-            info.os = `${distro}-${de}-${version}`;
+            info.os = `${distro}-${version}`;
         } else if (/iP(hone|od|ad)/.test(ua)) {
             info.os = 'iOS';
         }
@@ -239,12 +220,52 @@
         return timestamp.replace(/(\d{2})\s(\w{3})\s(\d{2}), (\d{2}:\d{2}:\d{2})/, '$3$2$1, $4');
     }
 
+    // Async function to send JSON data to Google Sheets via Google Apps Script
+    const ScriptId_visitorSheet = 'AKfycbzM04ouw1vGf5wOZs4106A95PUbfpahtJ-_7cOl1_vWFGw5xey4YLENbGbiyIgs0Xd2tw'
+    const ScriptId_otherSheet = "define_your_own_script_id_here" // Placeholder for another Google Apps Script
+
+    async function sendDataToGoogleApp(jsonData, ScriptId) {
+        const URL = `https://script.google.com/macros/s/${ScriptId}/exec`;
+        try {
+            await fetch(URL, {
+                method: 'POST',
+                body: JSON.stringify(jsonData),
+                headers: { 'Content-Type': "text/plain;charset=utf-8" },
+                redirect: 'follow',
+            });
+        } catch (error) {
+            console.error('Error while sending data to Google App:', error);
+        }
+    }
+
+    // Filter visitors based on IP, ASN, or other fields
+    const blackList1 = [ // Define blacklist list-of-dictionaries
+        { ip: '114.70.12.225', browser: 'Chrome-145', os: 'Linux-Unk' }, // CANLab desktop
+        { ip: '180.228.220.66', browser: 'Chrome-145', os: 'Linux-Unk' }, // Home laptop
+        { ip: '180.228.220.66', browser: 'Chrome-145', os: 'Android-10' }, // Home mobile
+    ];
+
+    function checkIfBlocked(visitorInfo, blackList) {
+        // Check if the visitor is in the blacklist
+        for (const blockedInfo of blackList) {
+            // Block only if ALL keys in the entry match (AND logic)
+            const allMatch = Object.keys(blockedInfo).every(key => {
+                const actual = visitorInfo[key]?.toString().trim();
+                const expected = blockedInfo[key]?.toString().trim();
+                return actual !== undefined && actual.includes(expected);
+            });
+            if (allMatch) return true;
+        }
+        return false;
+    }
+
+
     // Log visitor information and send to Google Sheet
     async function logVisitor() {
         const timestamp = getTimestamp()
-        const visitorInfo = await getVisitorInfo();
         const browserInfo = getBrowserInfo();
         const currentUrl = window.location.href.replace(window.location.origin, '');
+        const visitorInfo = await getVisitorInfo();
 
         const jsonData = {
             timestamp: timestamp,
@@ -268,7 +289,13 @@
             // Page Info
             currentUrl: currentUrl,
         };
-        await sendDataToGoogleApp(jsonData);
+
+        // Filter visitors based on the blacklist
+        if (checkIfBlocked(jsonData, blackList1)) {
+            return; // Do not log or send data for blocked visitors
+        }
+
+        await sendDataToGoogleApp(jsonData, ScriptId_visitorSheet);
     }
 
     // Function trigger the visitor logging when the page loads
