@@ -1393,7 +1393,7 @@
 
 
 <h2 id="thml.rag" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">thml.rag</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>thml.rag</code>
 
 
 <a href="#thml.rag" class="headerlink" title="Permanent link">¤</a></h2>
@@ -1413,7 +1413,7 @@
 <p><span class="doc-section-title">Classes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            RAG (thml.rag.RAG)" href="#thml.rag.RAG">RAG</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              RAG(rag_path: str = '', doc_path: str = None, llm: object = None, embedding: object = None, text_splitter: object = None, db: object = None, rerank: bool = False, style: str = 'simple') (thml.rag.RAG)" href="#thml.rag.RAG">RAG</a></code></b>
           –
           <div class="doc-md-description">
             <p>Retrieval Augmented Generation (RAG) system.</p>
@@ -1427,21 +1427,21 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            embedding_model (thml.rag.embedding_model)" href="#thml.rag.embedding_model">embedding_model</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            embedding_model(provider: str = 'huggingface', model_name: str = None, model_kwargs: dict = None) -> object (thml.rag.embedding_model)" href="#thml.rag.embedding_model">embedding_model</a></code></b>
             –
             <div class="doc-md-description">
               <p>Define the embedding function to use. See the list of <a href="https://python.langchain.com/docs/integrations/text_embeddin">available models of Langchain</a></p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            llm_model (thml.rag.llm_model)" href="#thml.rag.llm_model">llm_model</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            llm_model(service: str = 'web_opengpts', **kwargs: dict) -> LLM (thml.rag.llm_model)" href="#thml.rag.llm_model">llm_model</a></code></b>
             –
             <div class="doc-md-description">
               <p>Predefined LangChain's style LLM models to be used in the RAG system.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            load_document (thml.rag.load_document)" href="#thml.rag.load_document">load_document</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            load_document(doc_path: str = '', ext: str = None) -> list[Document] (thml.rag.load_document)" href="#thml.rag.load_document">load_document</a></code></b>
             –
             <div class="doc-md-description">
               <p>Load documents from the given path, using langchain's [document_loaders].</p>
@@ -1468,12 +1468,10 @@
 
 
 <h3 id="thml.rag.RAG" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">RAG</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">RAG</span><span class="p">(</span><span class="n">rag_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">doc_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">llm</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">embedding</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">text_splitter</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">rerank</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">style</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;simple&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.rag.RAG" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">RAG</span><span class="p">(</span><span class="n">rag_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">doc_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">llm</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">embedding</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">text_splitter</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">rerank</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">style</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;simple&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1498,35 +1496,35 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            ask (thml.rag.RAG.ask)" href="#thml.rag.RAG.ask">ask</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            ask(question='what are the documents about?') -> str (thml.rag.RAG.ask)" href="#thml.rag.RAG.ask">ask</a></code></b>
             –
             <div class="doc-md-description">
               <p>Perform an question-answering task and generate the answer to the given query that content come from the documents.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            ask_llm (thml.rag.RAG.ask_llm)" href="#thml.rag.RAG.ask_llm">ask_llm</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            ask_llm(question='Who are you?') -> str (thml.rag.RAG.ask_llm)" href="#thml.rag.RAG.ask_llm">ask_llm</a></code></b>
             –
             <div class="doc-md-description">
               <p>Ask the LLM model to generate the answer to the given query. It is different from <code>qa</code> function, which just return the answer if the documents contain the information. This function will generate the answer from the LLM model.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            search (thml.rag.RAG.search)" href="#thml.rag.RAG.search">search</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            search(question: str = 'summary') -> list[Document] (thml.rag.RAG.search)" href="#thml.rag.RAG.search">search</a></code></b>
             –
             <div class="doc-md-description">
               <p>Search information from the documents. This is actually perform <code>retriever.invoke</code> to retrieve information from <code>vectorstore</code>. Refer: <a href="https://python.langchain.com/docs/use_cases/question_answering/quickstart#retrieval-and-generation-retrieve">https://python.langchain.com/docs/use_cases/question_answering/quickstart#retrieval-and-generation-retrieve</a>.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            set_retriever (thml.rag.RAG.set_retriever)" href="#thml.rag.RAG.set_retriever">set_retriever</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            set_retriever(search_type: str = 'similarity', search_kwargs: dict = None) (thml.rag.RAG.set_retriever)" href="#thml.rag.RAG.set_retriever">set_retriever</a></code></b>
             –
             <div class="doc-md-description">
               <p>Define parameters for the retriever. See <code>vectorstore.as_retriever</code> for more information.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            set_chain (thml.rag.RAG.set_chain)" href="#thml.rag.RAG.set_chain">set_chain</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            set_chain(style: str = 'simple') -> None (thml.rag.RAG.set_chain)" href="#thml.rag.RAG.set_chain">set_chain</a></code></b>
             –
             <div class="doc-md-description">
               <p>Set the style of the RAG system. The style can be 'simple', 'multi_query', or 'fusion'.</p>
@@ -1540,8 +1538,7 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 <p><span class="doc-section-title">Attributes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            embedding
-
+          <b><code><a class="autorefs autorefs-internal" title="            embedding = embedding
 
   
       instance-attribute
@@ -1552,8 +1549,7 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            db
-
+          <b><code><a class="autorefs autorefs-internal" title="            db = db
 
   
       instance-attribute
@@ -1564,8 +1560,7 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            text_splitter
-
+          <b><code><a class="autorefs autorefs-internal" title="            text_splitter = text_splitter
 
   
       instance-attribute
@@ -1576,8 +1571,7 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            retriever
-
+          <b><code><a class="autorefs autorefs-internal" title="            retriever = self.set_retriever(search_type='similarity', search_kwargs={'k': 6})
 
   
       instance-attribute
@@ -1588,8 +1582,7 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            compressor
-
+          <b><code><a class="autorefs autorefs-internal" title="            compressor = reranker_model()
 
   
       instance-attribute
@@ -1600,8 +1593,7 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            compression_retriever
-
+          <b><code><a class="autorefs autorefs-internal" title="            compression_retriever = ContextualCompressionRetriever(base_compressor=(self.compressor), base_retriever=(self.retriever))
 
   
       instance-attribute
@@ -1612,8 +1604,7 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            llm
-
+          <b><code><a class="autorefs autorefs-internal" title="            llm = llm
 
   
       instance-attribute
@@ -1625,7 +1616,6 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
         </li>
         <li class="doc-section-item field-body">
           <b><code><a class="autorefs autorefs-internal" title="            info
-
 
   
       property
@@ -1653,16 +1643,14 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 
 
 <h4 id="thml.rag.RAG.embedding" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">embedding</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">embedding</span> <span class="o">=</span> <span class="n">embedding</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thml.rag.RAG.embedding" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">embedding</span> <span class="o">=</span> <span class="n">embedding</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1676,16 +1664,14 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 
 
 <h4 id="thml.rag.RAG.db" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">db</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">db</span> <span class="o">=</span> <span class="n">db</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thml.rag.RAG.db" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">db</span> <span class="o">=</span> <span class="n">db</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1699,16 +1685,14 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 
 
 <h4 id="thml.rag.RAG.text_splitter" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">text_splitter</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">text_splitter</span> <span class="o">=</span> <span class="n">text_splitter</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thml.rag.RAG.text_splitter" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">text_splitter</span> <span class="o">=</span> <span class="n">text_splitter</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1722,16 +1706,14 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 
 
 <h4 id="thml.rag.RAG.retriever" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">retriever</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">retriever</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">set_retriever</span><span class="p">(</span><span class="n">search_type</span><span class="o">=</span><span class="s1">&#39;similarity&#39;</span><span class="p">,</span> <span class="n">search_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;k&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">})</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thml.rag.RAG.retriever" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">retriever</span> <span class="o">=</span> <span class="n">set_retriever</span><span class="p">(</span><span class="n">search_type</span><span class="o">=</span><span class="s1">&#39;similarity&#39;</span><span class="p">,</span> <span class="n">search_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;k&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">})</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1745,16 +1727,14 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 
 
 <h4 id="thml.rag.RAG.compressor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">compressor</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">compressor</span> <span class="o">=</span> <span class="n">reranker_model</span><span class="p">()</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thml.rag.RAG.compressor" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">compressor</span> <span class="o">=</span> <span class="n">reranker_model</span><span class="p">()</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1768,16 +1748,14 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 
 
 <h4 id="thml.rag.RAG.compression_retriever" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">compression_retriever</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">compression_retriever</span> <span class="o">=</span> <span class="n">ContextualCompressionRetriever</span><span class="p">(</span><span class="n">base_compressor</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">compressor</span><span class="p">),</span> <span class="n">base_retriever</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">retriever</span><span class="p">))</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thml.rag.RAG.compression_retriever" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">compression_retriever</span> <span class="o">=</span> <span class="n">ContextualCompressionRetriever</span><span class="p">(</span><span class="n">base_compressor</span><span class="o">=</span><span class="n">compressor</span><span class="p">,</span> <span class="n">base_retriever</span><span class="o">=</span><span class="n">retriever</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1791,16 +1769,14 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 
 
 <h4 id="thml.rag.RAG.llm" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">llm</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">llm</span> <span class="o">=</span> <span class="n">llm</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thml.rag.RAG.llm" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">llm</span> <span class="o">=</span> <span class="n">llm</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1814,16 +1790,14 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 
 
 <h4 id="thml.rag.RAG.info" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">info</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">info</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-property"><code>property</code></small>
   </span>
 
 <a href="#thml.rag.RAG.info" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">info</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1839,12 +1813,10 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 
 
 <h4 id="thml.rag.RAG.ask" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">ask</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">ask</span><span class="p">(</span><span class="n">question</span><span class="o">=</span><span class="s1">&#39;what are the documents about?&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
 <a href="#thml.rag.RAG.ask" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">ask</span><span class="p">(</span><span class="n">question</span><span class="o">=</span><span class="s1">&#39;what are the documents about?&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1861,12 +1833,10 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 
 
 <h4 id="thml.rag.RAG.ask_llm" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">ask_llm</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">ask_llm</span><span class="p">(</span><span class="n">question</span><span class="o">=</span><span class="s1">&#39;Who are you?&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
 <a href="#thml.rag.RAG.ask_llm" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">ask_llm</span><span class="p">(</span><span class="n">question</span><span class="o">=</span><span class="s1">&#39;Who are you?&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1882,12 +1852,10 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 
 
 <h4 id="thml.rag.RAG.search" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">search</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">search</span><span class="p">(</span><span class="n">question</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;summary&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Document</span><span class="p">]</span></code>
 
 <a href="#thml.rag.RAG.search" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">search</span><span class="p">(</span><span class="n">question</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;summary&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Document</span><span class="p">]</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1926,12 +1894,10 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 
 
 <h4 id="thml.rag.RAG.set_retriever" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">set_retriever</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">set_retriever</span><span class="p">(</span><span class="n">search_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;similarity&#39;</span><span class="p">,</span> <span class="n">search_kwargs</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thml.rag.RAG.set_retriever" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">set_retriever</span><span class="p">(</span><span class="n">search_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;similarity&#39;</span><span class="p">,</span> <span class="n">search_kwargs</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1978,12 +1944,10 @@ filter: Filter by document metadata</p>
 
 
 <h4 id="thml.rag.RAG.set_chain" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">set_chain</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">set_chain</span><span class="p">(</span><span class="n">style</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;simple&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span></code>
 
 <a href="#thml.rag.RAG.set_chain" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">set_chain</span><span class="p">(</span><span class="n">style</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;simple&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2008,12 +1972,10 @@ filter: Filter by document metadata</p>
 
 
 <h3 id="thml.rag.embedding_model" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">embedding_model</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">embedding_model</span><span class="p">(</span><span class="n">provider</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;huggingface&#39;</span><span class="p">,</span> <span class="n">model_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">model_kwargs</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">object</span></code>
 
 <a href="#thml.rag.embedding_model" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">embedding_model</span><span class="p">(</span><span class="n">provider</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;huggingface&#39;</span><span class="p">,</span> <span class="n">model_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">model_kwargs</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">object</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2078,12 +2040,10 @@ filter: Filter by document metadata</p>
 
 
 <h3 id="thml.rag.llm_model" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">llm_model</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">llm_model</span><span class="p">(</span><span class="n">service</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;web_opengpts&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">LLM</span></code>
 
 <a href="#thml.rag.llm_model" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">llm_model</span><span class="p">(</span><span class="n">service</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;web_opengpts&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">LLM</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2104,12 +2064,10 @@ Returns:
 
 
 <h3 id="thml.rag.load_document" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">load_document</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">load_document</span><span class="p">(</span><span class="n">doc_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">ext</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Document</span><span class="p">]</span></code>
 
 <a href="#thml.rag.load_document" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">load_document</span><span class="p">(</span><span class="n">doc_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">ext</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Document</span><span class="p">]</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 

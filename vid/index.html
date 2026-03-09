@@ -2301,7 +2301,7 @@
 
 
 <h2 id="thml.vid" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">thml.vid</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>thml.vid</code>
 
 
 <a href="#thml.vid" class="headerlink" title="Permanent link">¤</a></h2>
@@ -2401,7 +2401,7 @@
 
 
 <h3 id="thml.vid.audio_book" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">audio_book</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>audio_book</code>
 
 
 <a href="#thml.vid.audio_book" class="headerlink" title="Permanent link">¤</a></h3>
@@ -2430,7 +2430,7 @@
 
 
 <h3 id="thml.vid.download_youtube" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">download_youtube</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>download_youtube</code>
 
 
 <a href="#thml.vid.download_youtube" class="headerlink" title="Permanent link">¤</a></h3>
@@ -2452,28 +2452,28 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            videos_from_channel (thml.vid.download_youtube.videos_from_channel)" href="#thml.vid.download_youtube.videos_from_channel">videos_from_channel</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            videos_from_channel(channel_URL, period=1) (thml.vid.download_youtube.videos_from_channel)" href="#thml.vid.download_youtube.videos_from_channel">videos_from_channel</a></code></b>
             –
             <div class="doc-md-description">
               <p>get all video links from a channel in "period" days</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            download_video (thml.vid.download_youtube.download_video)" href="#thml.vid.download_youtube.download_video">download_video</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            download_video(URLs, only_video=False, only_audio=False) (thml.vid.download_youtube.download_video)" href="#thml.vid.download_youtube.download_video">download_video</a></code></b>
             –
             <div class="doc-md-description">
               <p>Download videos from list of URLs</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            download_srt_caption (thml.vid.download_youtube.download_srt_caption)" href="#thml.vid.download_youtube.download_srt_caption">download_srt_caption</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            download_srt_caption(url, lang='en', out_file='transcript_srt') (thml.vid.download_youtube.download_srt_caption)" href="#thml.vid.download_youtube.download_srt_caption">download_srt_caption</a></code></b>
             –
             <div class="doc-md-description">
               <p>Download video caption in .srt format</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            download_json_caption (thml.vid.download_youtube.download_json_caption)" href="#thml.vid.download_youtube.download_json_caption">download_json_caption</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            download_json_caption(URL, out_file='transcript_json.json') (thml.vid.download_youtube.download_json_caption)" href="#thml.vid.download_youtube.download_json_caption">download_json_caption</a></code></b>
             –
             <div class="doc-md-description">
               <p>Download video caption in .json format</p>
@@ -2500,12 +2500,10 @@
 
 
 <h4 id="thml.vid.download_youtube.videos_from_channel" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">videos_from_channel</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">videos_from_channel</span><span class="p">(</span><span class="n">channel_URL</span><span class="p">,</span> <span class="n">period</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span></code>
 
 <a href="#thml.vid.download_youtube.videos_from_channel" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">videos_from_channel</span><span class="p">(</span><span class="n">channel_URL</span><span class="p">,</span> <span class="n">period</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2521,12 +2519,10 @@
 
 
 <h4 id="thml.vid.download_youtube.download_video" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">download_video</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">download_video</span><span class="p">(</span><span class="n">URLs</span><span class="p">,</span> <span class="n">only_video</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">only_audio</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thml.vid.download_youtube.download_video" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">download_video</span><span class="p">(</span><span class="n">URLs</span><span class="p">,</span> <span class="n">only_video</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">only_audio</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2546,12 +2542,10 @@ Args:
 
 
 <h4 id="thml.vid.download_youtube.download_srt_caption" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">download_srt_caption</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">download_srt_caption</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;transcript_srt&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.download_youtube.download_srt_caption" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">download_srt_caption</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;transcript_srt&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2572,12 +2566,10 @@ Args:
 
 
 <h4 id="thml.vid.download_youtube.download_json_caption" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">download_json_caption</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">download_json_caption</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;transcript_json.json&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.download_youtube.download_json_caption" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">download_json_caption</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;transcript_json.json&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2602,7 +2594,7 @@ Args:
 
 
 <h3 id="thml.vid.make_video" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">make_video</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>make_video</code>
 
 
 <a href="#thml.vid.make_video" class="headerlink" title="Permanent link">¤</a></h3>
@@ -2624,112 +2616,112 @@ Args:
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            mknews_video_intro (thml.vid.make_video.mknews_video_intro)" href="#thml.vid.make_video.mknews_video_intro">mknews_video_intro</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            mknews_video_intro(vid_size=(1280, 720), lang='vi', rate=150, bg_video='default', bg_audio='default', bg_audio_factor=0.3, out_file='vid_intro.mp4') (thml.vid.make_video.mknews_video_intro)" href="#thml.vid.make_video.mknews_video_intro">mknews_video_intro</a></code></b>
             –
             <div class="doc-md-description">
               <p>Make INTRO video</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            mknews_video_outro (thml.vid.make_video.mknews_video_outro)" href="#thml.vid.make_video.mknews_video_outro">mknews_video_outro</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            mknews_video_outro(vid_size=(1280, 720), lang='vi', rate=150, bg_video='default', bg_audio='default', bg_audio_factor=0.3, out_file='vid_outro.mp4') (thml.vid.make_video.mknews_video_outro)" href="#thml.vid.make_video.mknews_video_outro">mknews_video_outro</a></code></b>
             –
             <div class="doc-md-description">
               <p>Make OUTRO video</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            mknews_audio (thml.vid.make_video.mknews_audio)" href="#thml.vid.make_video.mknews_audio">mknews_audio</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            mknews_audio(file_text, lang='vi', rate=150, greet_word='', end_word='', out_file='audio_news.mp3') (thml.vid.make_video.mknews_audio)" href="#thml.vid.make_video.mknews_audio">mknews_audio</a></code></b>
             –
             <div class="doc-md-description">
               <p>create audio from file_text</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            mknews_1_video (thml.vid.make_video.mknews_1_video)" href="#thml.vid.make_video.mknews_1_video">mknews_1_video</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            mknews_1_video(lang='vi', rate=150, greet_word='', end_word='', vid_size=(1280, 720), img_duration=15, bg_video='', bg_audio='random', bg_audio_factor=0.2, out_file='vid_news.mp4') (thml.vid.make_video.mknews_1_video)" href="#thml.vid.make_video.mknews_1_video">mknews_1_video</a></code></b>
             –
             <div class="doc-md-description">
               <p>Make a video with concept:</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            mknews_lists_videos (thml.vid.make_video.mknews_lists_videos)" href="#thml.vid.make_video.mknews_lists_videos">mknews_lists_videos</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            mknews_lists_videos(sub_folder='news*', lang='vi', rate=150, greet_word='', end_word='', vid_size=(1280, 720), img_duration=15, bg_video='', bg_audio='', bg_audio_factor=0.2, padding=0, logo='STV', logo_pos='left', out_file='vid_all_news.mp4') (thml.vid.make_video.mknews_lists_videos)" href="#thml.vid.make_video.mknews_lists_videos">mknews_lists_videos</a></code></b>
             –
             <div class="doc-md-description">
               <p>Make a videos in subfolder:</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            set_bg_audio (thml.vid.make_video.set_bg_audio)" href="#thml.vid.make_video.set_bg_audio">set_bg_audio</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            set_bg_audio(file_video, bg_audio='random', bg_audio_factor=0.2, keep_original=False) (thml.vid.make_video.set_bg_audio)" href="#thml.vid.make_video.set_bg_audio">set_bg_audio</a></code></b>
             –
             <div class="doc-md-description">
               <p>Set background_audio for video</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            mknews_video_toc (thml.vid.make_video.mknews_video_toc)" href="#thml.vid.make_video.mknews_video_toc">mknews_video_toc</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            mknews_video_toc(sub_folder='news*', file_video_news='vid_news.mp4', vid_size=(1280, 720), bg_video='default', bg_audio='default', bg_audio_factor=0.3, border_factor=0.2, with_title=False, out_file='vid_TOC.mp4') (thml.vid.make_video.mknews_video_toc)" href="#thml.vid.make_video.mknews_video_toc">mknews_video_toc</a></code></b>
             –
             <div class="doc-md-description">
               <p>Make a TOC video:</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            concate_audio_files (thml.vid.make_video.concate_audio_files)" href="#thml.vid.make_video.concate_audio_files">concate_audio_files</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            concate_audio_files(list_files, padding=0, out_file='concate_audio.mp3') (thml.vid.make_video.concate_audio_files)" href="#thml.vid.make_video.concate_audio_files">concate_audio_files</a></code></b>
             –
             <div class="doc-md-description">
               <p>concate a list of audios</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            concate_video_files (thml.vid.make_video.concate_video_files)" href="#thml.vid.make_video.concate_video_files">concate_video_files</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            concate_video_files(list_files, padding=0, out_file='concate_videoNews.mp4') (thml.vid.make_video.concate_video_files)" href="#thml.vid.make_video.concate_video_files">concate_video_files</a></code></b>
             –
             <div class="doc-md-description">
               <p>concate a list of videos</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            add_logo_spokeman (thml.vid.make_video.add_logo_spokeman)" href="#thml.vid.make_video.add_logo_spokeman">add_logo_spokeman</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            add_logo_spokeman(file_video, vid_size=(1280, 720), logo='STV', logo_pos='left', spokeman='', spokeman_pos='left', h_spokeman=320, keep_original=False) (thml.vid.make_video.add_logo_spokeman)" href="#thml.vid.make_video.add_logo_spokeman">add_logo_spokeman</a></code></b>
             –
             <div class="doc-md-description">
               <p>add Logo on videos</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            split_video (thml.vid.make_video.split_video)" href="#thml.vid.make_video.split_video">split_video</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            split_video(video_file, n=3) (thml.vid.make_video.split_video)" href="#thml.vid.make_video.split_video">split_video</a></code></b>
             –
             <div class="doc-md-description">
               <p>Split video into n parts</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            speech_word_by_word (thml.vid.make_video.speech_word_by_word)" href="#thml.vid.make_video.speech_word_by_word">speech_word_by_word</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            speech_word_by_word(text, lang='VN', rate=150, vol=1.0, audio_file='word_by_word.mp3') (thml.vid.make_video.speech_word_by_word)" href="#thml.vid.make_video.speech_word_by_word">speech_word_by_word</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            speech_1_pair_lang (thml.vid.make_video.speech_1_pair_lang)" href="#thml.vid.make_video.speech_1_pair_lang">speech_1_pair_lang</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            speech_1_pair_lang(text1, text2, lang1='VN', lang2='EN', voice_name1='', voice_name2='', rate1=130, rate2=120, repeat_slow=60, repeat_fast=60, out_file='pair_lang_audio.mp3') (thml.vid.make_video.speech_1_pair_lang)" href="#thml.vid.make_video.speech_1_pair_lang">speech_1_pair_lang</a></code></b>
             –
             <div class="doc-md-description">
               <p>Returns:</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            speech_list_pair_lang (thml.vid.make_video.speech_list_pair_lang)" href="#thml.vid.make_video.speech_list_pair_lang">speech_list_pair_lang</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            speech_list_pair_lang(df, lang1='VN', lang2='EN', rate1=130, rate2=120, repeat_slow=60, repeat_fast=60, out_file='pair_lang_audio_all.mp3') (thml.vid.make_video.speech_list_pair_lang)" href="#thml.vid.make_video.speech_list_pair_lang">speech_list_pair_lang</a></code></b>
             –
             <div class="doc-md-description">
               <p>Args:</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            mkvid_1_pair_lang (thml.vid.make_video.mkvid_1_pair_lang)" href="#thml.vid.make_video.mkvid_1_pair_lang">mkvid_1_pair_lang</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            mkvid_1_pair_lang(text1, text2, lang1='VN', lang2='EN', voice_name1='', voice_name2='', rate1=130, rate2=120, repeat_slow=60, repeat_fast=60, vid_size=(1280, 720), font_size=80, text_color1='blue', text_color2='black', bg_color1='azure3', bg_color2='azure4', padding=1, show_flag=True, out_file='pair_lang.mp4') (thml.vid.make_video.mkvid_1_pair_lang)" href="#thml.vid.make_video.mkvid_1_pair_lang">mkvid_1_pair_lang</a></code></b>
             –
             <div class="doc-md-description">
               <p>Make a video with concept:</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            mkvid_list_pair_lang_from_df (thml.vid.make_video.mkvid_list_pair_lang_from_df)" href="#thml.vid.make_video.mkvid_list_pair_lang_from_df">mkvid_list_pair_lang_from_df</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            mkvid_list_pair_lang_from_df(df, lang1='VN', lang2='EN', voice_name1='', voice_name2='', rate1=130, rate2=120, repeat_slow=60, repeat_fast=60, vid_size=(1280, 720), font_size=80, text_color1='blue', text_color2='black', bg_color1='azure4', bg_color2='CadetBlue4', padding=1, show_flag=True, out_file='vid_pair_lang.mp4') (thml.vid.make_video.mkvid_list_pair_lang_from_df)" href="#thml.vid.make_video.mkvid_list_pair_lang_from_df">mkvid_list_pair_lang_from_df</a></code></b>
             –
             <div class="doc-md-description">
               <p>Args:</p>
@@ -2756,12 +2748,10 @@ Args:
 
 
 <h4 id="thml.vid.make_video.mknews_video_intro" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">mknews_video_intro</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">mknews_video_intro</span><span class="p">(</span><span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">bg_video</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">bg_audio</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">bg_audio_factor</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;vid_intro.mp4&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.mknews_video_intro" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">mknews_video_intro</span><span class="p">(</span><span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">bg_video</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">bg_audio</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">bg_audio_factor</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;vid_intro.mp4&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2877,12 +2867,10 @@ Args:
 
 
 <h4 id="thml.vid.make_video.mknews_video_outro" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">mknews_video_outro</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">mknews_video_outro</span><span class="p">(</span><span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">bg_video</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">bg_audio</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">bg_audio_factor</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;vid_outro.mp4&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.mknews_video_outro" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">mknews_video_outro</span><span class="p">(</span><span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">bg_video</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">bg_audio</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">bg_audio_factor</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;vid_outro.mp4&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2905,12 +2893,10 @@ Args:
 
 
 <h4 id="thml.vid.make_video.mknews_audio" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">mknews_audio</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">mknews_audio</span><span class="p">(</span><span class="n">file_text</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">greet_word</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">end_word</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;audio_news.mp3&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.mknews_audio" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">mknews_audio</span><span class="p">(</span><span class="n">file_text</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">greet_word</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">end_word</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;audio_news.mp3&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2981,12 +2967,10 @@ Args:
 
 
 <h4 id="thml.vid.make_video.mknews_1_video" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">mknews_1_video</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">mknews_1_video</span><span class="p">(</span><span class="n">lang</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">greet_word</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">end_word</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">img_duration</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">bg_video</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">bg_audio</span><span class="o">=</span><span class="s1">&#39;random&#39;</span><span class="p">,</span> <span class="n">bg_audio_factor</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;vid_news.mp4&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.mknews_1_video" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">mknews_1_video</span><span class="p">(</span><span class="n">lang</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">greet_word</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">end_word</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">img_duration</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">bg_video</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">bg_audio</span><span class="o">=</span><span class="s1">&#39;random&#39;</span><span class="p">,</span> <span class="n">bg_audio_factor</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;vid_news.mp4&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3116,12 +3100,10 @@ Only fist ".txt" files is used</p>
 
 
 <h4 id="thml.vid.make_video.mknews_lists_videos" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">mknews_lists_videos</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">mknews_lists_videos</span><span class="p">(</span><span class="n">sub_folder</span><span class="o">=</span><span class="s1">&#39;news*&#39;</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">greet_word</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">end_word</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">img_duration</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">bg_video</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">bg_audio</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">bg_audio_factor</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">logo</span><span class="o">=</span><span class="s1">&#39;STV&#39;</span><span class="p">,</span> <span class="n">logo_pos</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;vid_all_news.mp4&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.mknews_lists_videos" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">mknews_lists_videos</span><span class="p">(</span><span class="n">sub_folder</span><span class="o">=</span><span class="s1">&#39;news*&#39;</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">greet_word</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">end_word</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">img_duration</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">bg_video</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">bg_audio</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">bg_audio_factor</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">logo</span><span class="o">=</span><span class="s1">&#39;STV&#39;</span><span class="p">,</span> <span class="n">logo_pos</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;vid_all_news.mp4&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3172,12 +3154,10 @@ Only fist ".txt" files is used</p>
 
 
 <h4 id="thml.vid.make_video.set_bg_audio" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">set_bg_audio</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">set_bg_audio</span><span class="p">(</span><span class="n">file_video</span><span class="p">,</span> <span class="n">bg_audio</span><span class="o">=</span><span class="s1">&#39;random&#39;</span><span class="p">,</span> <span class="n">bg_audio_factor</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">keep_original</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.set_bg_audio" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">set_bg_audio</span><span class="p">(</span><span class="n">file_video</span><span class="p">,</span> <span class="n">bg_audio</span><span class="o">=</span><span class="s1">&#39;random&#39;</span><span class="p">,</span> <span class="n">bg_audio_factor</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">keep_original</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3228,12 +3208,10 @@ Only fist ".txt" files is used</p>
 
 
 <h4 id="thml.vid.make_video.mknews_video_toc" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">mknews_video_toc</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">mknews_video_toc</span><span class="p">(</span><span class="n">sub_folder</span><span class="o">=</span><span class="s1">&#39;news*&#39;</span><span class="p">,</span> <span class="n">file_video_news</span><span class="o">=</span><span class="s1">&#39;vid_news.mp4&#39;</span><span class="p">,</span> <span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">bg_video</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">bg_audio</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">bg_audio_factor</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">border_factor</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">with_title</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;vid_TOC.mp4&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.mknews_video_toc" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">mknews_video_toc</span><span class="p">(</span><span class="n">sub_folder</span><span class="o">=</span><span class="s1">&#39;news*&#39;</span><span class="p">,</span> <span class="n">file_video_news</span><span class="o">=</span><span class="s1">&#39;vid_news.mp4&#39;</span><span class="p">,</span> <span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">bg_video</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">bg_audio</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">bg_audio_factor</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">border_factor</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">with_title</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;vid_TOC.mp4&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3274,12 +3252,10 @@ Only fist ".txt" files is used</p>
 
 
 <h4 id="thml.vid.make_video.concate_audio_files" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">concate_audio_files</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">concate_audio_files</span><span class="p">(</span><span class="n">list_files</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;concate_audio.mp3&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.concate_audio_files" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">concate_audio_files</span><span class="p">(</span><span class="n">list_files</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;concate_audio.mp3&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3320,12 +3296,10 @@ Only fist ".txt" files is used</p>
 
 
 <h4 id="thml.vid.make_video.concate_video_files" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">concate_video_files</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">concate_video_files</span><span class="p">(</span><span class="n">list_files</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;concate_videoNews.mp4&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.concate_video_files" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">concate_video_files</span><span class="p">(</span><span class="n">list_files</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;concate_videoNews.mp4&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3374,12 +3348,10 @@ Only fist ".txt" files is used</p>
 
 
 <h4 id="thml.vid.make_video.add_logo_spokeman" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">add_logo_spokeman</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">add_logo_spokeman</span><span class="p">(</span><span class="n">file_video</span><span class="p">,</span> <span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">logo</span><span class="o">=</span><span class="s1">&#39;STV&#39;</span><span class="p">,</span> <span class="n">logo_pos</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">spokeman</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">spokeman_pos</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">h_spokeman</span><span class="o">=</span><span class="mi">320</span><span class="p">,</span> <span class="n">keep_original</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.add_logo_spokeman" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">add_logo_spokeman</span><span class="p">(</span><span class="n">file_video</span><span class="p">,</span> <span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">logo</span><span class="o">=</span><span class="s1">&#39;STV&#39;</span><span class="p">,</span> <span class="n">logo_pos</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">spokeman</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">spokeman_pos</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">h_spokeman</span><span class="o">=</span><span class="mi">320</span><span class="p">,</span> <span class="n">keep_original</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3474,12 +3446,10 @@ Only fist ".txt" files is used</p>
 
 
 <h4 id="thml.vid.make_video.split_video" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">split_video</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">split_video</span><span class="p">(</span><span class="n">video_file</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.split_video" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">split_video</span><span class="p">(</span><span class="n">video_file</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3495,12 +3465,10 @@ Only fist ".txt" files is used</p>
 
 
 <h4 id="thml.vid.make_video.speech_word_by_word" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">speech_word_by_word</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">speech_word_by_word</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;VN&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">vol</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">audio_file</span><span class="o">=</span><span class="s1">&#39;word_by_word.mp3&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.speech_word_by_word" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">speech_word_by_word</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;VN&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">vol</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">audio_file</span><span class="o">=</span><span class="s1">&#39;word_by_word.mp3&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3514,12 +3482,10 @@ Only fist ".txt" files is used</p>
 
 
 <h4 id="thml.vid.make_video.speech_1_pair_lang" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">speech_1_pair_lang</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">speech_1_pair_lang</span><span class="p">(</span><span class="n">text1</span><span class="p">,</span> <span class="n">text2</span><span class="p">,</span> <span class="n">lang1</span><span class="o">=</span><span class="s1">&#39;VN&#39;</span><span class="p">,</span> <span class="n">lang2</span><span class="o">=</span><span class="s1">&#39;EN&#39;</span><span class="p">,</span> <span class="n">voice_name1</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">voice_name2</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">rate1</span><span class="o">=</span><span class="mi">130</span><span class="p">,</span> <span class="n">rate2</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">repeat_slow</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">repeat_fast</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;pair_lang_audio.mp3&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.speech_1_pair_lang" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">speech_1_pair_lang</span><span class="p">(</span><span class="n">text1</span><span class="p">,</span> <span class="n">text2</span><span class="p">,</span> <span class="n">lang1</span><span class="o">=</span><span class="s1">&#39;VN&#39;</span><span class="p">,</span> <span class="n">lang2</span><span class="o">=</span><span class="s1">&#39;EN&#39;</span><span class="p">,</span> <span class="n">voice_name1</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">voice_name2</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">rate1</span><span class="o">=</span><span class="mi">130</span><span class="p">,</span> <span class="n">rate2</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">repeat_slow</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">repeat_fast</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;pair_lang_audio.mp3&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3553,12 +3519,10 @@ Only fist ".txt" files is used</p>
 
 
 <h4 id="thml.vid.make_video.speech_list_pair_lang" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">speech_list_pair_lang</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">speech_list_pair_lang</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">lang1</span><span class="o">=</span><span class="s1">&#39;VN&#39;</span><span class="p">,</span> <span class="n">lang2</span><span class="o">=</span><span class="s1">&#39;EN&#39;</span><span class="p">,</span> <span class="n">rate1</span><span class="o">=</span><span class="mi">130</span><span class="p">,</span> <span class="n">rate2</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">repeat_slow</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">repeat_fast</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;pair_lang_audio_all.mp3&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.speech_list_pair_lang" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">speech_list_pair_lang</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">lang1</span><span class="o">=</span><span class="s1">&#39;VN&#39;</span><span class="p">,</span> <span class="n">lang2</span><span class="o">=</span><span class="s1">&#39;EN&#39;</span><span class="p">,</span> <span class="n">rate1</span><span class="o">=</span><span class="mi">130</span><span class="p">,</span> <span class="n">rate2</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">repeat_slow</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">repeat_fast</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;pair_lang_audio_all.mp3&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3586,12 +3550,10 @@ Only fist ".txt" files is used</p>
 
 
 <h4 id="thml.vid.make_video.mkvid_1_pair_lang" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">mkvid_1_pair_lang</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">mkvid_1_pair_lang</span><span class="p">(</span><span class="n">text1</span><span class="p">,</span> <span class="n">text2</span><span class="p">,</span> <span class="n">lang1</span><span class="o">=</span><span class="s1">&#39;VN&#39;</span><span class="p">,</span> <span class="n">lang2</span><span class="o">=</span><span class="s1">&#39;EN&#39;</span><span class="p">,</span> <span class="n">voice_name1</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">voice_name2</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">rate1</span><span class="o">=</span><span class="mi">130</span><span class="p">,</span> <span class="n">rate2</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">repeat_slow</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">repeat_fast</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">text_color1</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">text_color2</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">bg_color1</span><span class="o">=</span><span class="s1">&#39;azure3&#39;</span><span class="p">,</span> <span class="n">bg_color2</span><span class="o">=</span><span class="s1">&#39;azure4&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">show_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;pair_lang.mp4&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.mkvid_1_pair_lang" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">mkvid_1_pair_lang</span><span class="p">(</span><span class="n">text1</span><span class="p">,</span> <span class="n">text2</span><span class="p">,</span> <span class="n">lang1</span><span class="o">=</span><span class="s1">&#39;VN&#39;</span><span class="p">,</span> <span class="n">lang2</span><span class="o">=</span><span class="s1">&#39;EN&#39;</span><span class="p">,</span> <span class="n">voice_name1</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">voice_name2</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">rate1</span><span class="o">=</span><span class="mi">130</span><span class="p">,</span> <span class="n">rate2</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">repeat_slow</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">repeat_fast</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">text_color1</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">text_color2</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">bg_color1</span><span class="o">=</span><span class="s1">&#39;azure3&#39;</span><span class="p">,</span> <span class="n">bg_color2</span><span class="o">=</span><span class="s1">&#39;azure4&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">show_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;pair_lang.mp4&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3608,12 +3570,10 @@ Only fist ".txt" files is used</p>
 
 
 <h4 id="thml.vid.make_video.mkvid_list_pair_lang_from_df" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">mkvid_list_pair_lang_from_df</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">mkvid_list_pair_lang_from_df</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">lang1</span><span class="o">=</span><span class="s1">&#39;VN&#39;</span><span class="p">,</span> <span class="n">lang2</span><span class="o">=</span><span class="s1">&#39;EN&#39;</span><span class="p">,</span> <span class="n">voice_name1</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">voice_name2</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">rate1</span><span class="o">=</span><span class="mi">130</span><span class="p">,</span> <span class="n">rate2</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">repeat_slow</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">repeat_fast</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">text_color1</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">text_color2</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">bg_color1</span><span class="o">=</span><span class="s1">&#39;azure4&#39;</span><span class="p">,</span> <span class="n">bg_color2</span><span class="o">=</span><span class="s1">&#39;CadetBlue4&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">show_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;vid_pair_lang.mp4&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.make_video.mkvid_list_pair_lang_from_df" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">mkvid_list_pair_lang_from_df</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">lang1</span><span class="o">=</span><span class="s1">&#39;VN&#39;</span><span class="p">,</span> <span class="n">lang2</span><span class="o">=</span><span class="s1">&#39;EN&#39;</span><span class="p">,</span> <span class="n">voice_name1</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">voice_name2</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">rate1</span><span class="o">=</span><span class="mi">130</span><span class="p">,</span> <span class="n">rate2</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">repeat_slow</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">repeat_fast</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">vid_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">),</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">text_color1</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">text_color2</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">bg_color1</span><span class="o">=</span><span class="s1">&#39;azure4&#39;</span><span class="p">,</span> <span class="n">bg_color2</span><span class="o">=</span><span class="s1">&#39;CadetBlue4&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">show_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;vid_pair_lang.mp4&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3650,7 +3610,7 @@ Only fist ".txt" files is used</p>
 
 
 <h3 id="thml.vid.news" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">news</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>news</code>
 
 
 <a href="#thml.vid.news" class="headerlink" title="Permanent link">¤</a></h3>
@@ -3701,7 +3661,7 @@ Only fist ".txt" files is used</p>
 
 
 <h4 id="thml.vid.news.making_news" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">making_news</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>making_news</code>
 
 
 <a href="#thml.vid.news.making_news" class="headerlink" title="Permanent link">¤</a></h4>
@@ -3723,14 +3683,14 @@ Only fist ".txt" files is used</p>
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            filter_images (thml.vid.news.making_news.filter_images)" href="#thml.vid.news.making_news.filter_images">filter_images</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            filter_images(filenames: list[str], width: float = 300, height: float = 300) -> list[str] (thml.vid.news.making_news.filter_images)" href="#thml.vid.news.making_news.filter_images">filter_images</a></code></b>
             –
             <div class="doc-md-description">
               <p>Filter images based on their width and height.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            AI_rewrite_text (thml.vid.news.making_news.AI_rewrite_text)" href="#thml.vid.news.making_news.AI_rewrite_text">AI_rewrite_text</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            AI_rewrite_text(llm: object, text: str, max_length: int = 300, target_language: str = 'English') -> str (thml.vid.news.making_news.AI_rewrite_text)" href="#thml.vid.news.making_news.AI_rewrite_text">AI_rewrite_text</a></code></b>
             –
             <div class="doc-md-description">
               <p>Using LLM to rewrite an article text in a limited length.</p>
@@ -3757,12 +3717,10 @@ Only fist ".txt" files is used</p>
 
 
 <h5 id="thml.vid.news.making_news.filter_images" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">filter_images</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">filter_images</span><span class="p">(</span><span class="n">filenames</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">width</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">300</span><span class="p">,</span> <span class="n">height</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">300</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 <a href="#thml.vid.news.making_news.filter_images" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">filter_images</span><span class="p">(</span><span class="n">filenames</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">width</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">300</span><span class="p">,</span> <span class="n">height</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">300</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3778,12 +3736,10 @@ Only fist ".txt" files is used</p>
 
 
 <h5 id="thml.vid.news.making_news.AI_rewrite_text" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">AI_rewrite_text</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">AI_rewrite_text</span><span class="p">(</span><span class="n">llm</span><span class="p">:</span> <span class="nb">object</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">max_length</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">300</span><span class="p">,</span> <span class="n">target_language</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;English&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
 <a href="#thml.vid.news.making_news.AI_rewrite_text" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">AI_rewrite_text</span><span class="p">(</span><span class="n">llm</span><span class="p">:</span> <span class="nb">object</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">max_length</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">300</span><span class="p">,</span> <span class="n">target_language</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;English&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3815,7 +3771,7 @@ Only fist ".txt" files is used</p>
 
 
 <h3 id="thml.vid.search_google" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">search_google</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>search_google</code>
 
 
 <a href="#thml.vid.search_google" class="headerlink" title="Permanent link">¤</a></h3>
@@ -3837,35 +3793,35 @@ Only fist ".txt" files is used</p>
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            Distance (thml.vid.search_google.Distance)" href="#thml.vid.search_google.Distance">Distance</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            Distance(term1, term2) (thml.vid.search_google.Distance)" href="#thml.vid.search_google.Distance">Distance</a></code></b>
             –
             <div class="doc-md-description">
               <p>Get google distance between words</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            get_user_agent (thml.vid.search_google.get_user_agent)" href="#thml.vid.search_google.get_user_agent">get_user_agent</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            get_user_agent() (thml.vid.search_google.get_user_agent)" href="#thml.vid.search_google.get_user_agent">get_user_agent</a></code></b>
             –
             <div class="doc-md-description">
               <p>Get a random user agent string.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            get_hits (thml.vid.search_google.get_hits)" href="#thml.vid.search_google.get_hits">get_hits</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            get_hits(query, tld='com', lang='sv', tbs='0', safe='off', extra_params={}, tpe='', user_agent=None) (thml.vid.search_google.get_hits)" href="#thml.vid.search_google.get_hits">get_hits</a></code></b>
             –
             <div class="doc-md-description">
               <p>This function return the amount of hits on search query</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            Download (thml.vid.search_google.Download)" href="#thml.vid.search_google.Download">Download</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            Download(url_list, out_format, download_dir) (thml.vid.search_google.Download)" href="#thml.vid.search_google.Download">Download</a></code></b>
             –
             <div class="doc-md-description">
               <p>Download url as html file</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            search (thml.vid.search_google.search)" href="#thml.vid.search_google.search">search</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            search(query, tld='com', lang='en', tbs='0', safe='off', num=10, start=0, stop=10, pause=2.0, only_standard=False, extra_params={}, tpe='', user_agent=None, type='text', rights='', download=False, download_dir='downloads', out_format='html') (thml.vid.search_google.search)" href="#thml.vid.search_google.search">search</a></code></b>
             –
             <div class="doc-md-description">
               <p>SEARCH</p>
@@ -3892,12 +3848,10 @@ Only fist ".txt" files is used</p>
 
 
 <h4 id="thml.vid.search_google.Distance" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">Distance</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">Distance</span><span class="p">(</span><span class="n">term1</span><span class="p">,</span> <span class="n">term2</span><span class="p">)</span></code>
 
 <a href="#thml.vid.search_google.Distance" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">Distance</span><span class="p">(</span><span class="n">term1</span><span class="p">,</span> <span class="n">term2</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3914,12 +3868,10 @@ Returns float</p>
 
 
 <h4 id="thml.vid.search_google.get_user_agent" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">get_user_agent</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">get_user_agent</span><span class="p">()</span></code>
 
 <a href="#thml.vid.search_google.get_user_agent" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">get_user_agent</span><span class="p">()</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3936,12 +3888,10 @@ Return string</p>
 
 
 <h4 id="thml.vid.search_google.get_hits" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">get_hits</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">get_hits</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">tld</span><span class="o">=</span><span class="s1">&#39;com&#39;</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;sv&#39;</span><span class="p">,</span> <span class="n">tbs</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="s1">&#39;off&#39;</span><span class="p">,</span> <span class="n">extra_params</span><span class="o">=</span><span class="p">{},</span> <span class="n">tpe</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">user_agent</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thml.vid.search_google.get_hits" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">get_hits</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">tld</span><span class="o">=</span><span class="s1">&#39;com&#39;</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;sv&#39;</span><span class="p">,</span> <span class="n">tbs</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="s1">&#39;off&#39;</span><span class="p">,</span> <span class="n">extra_params</span><span class="o">=</span><span class="p">{},</span> <span class="n">tpe</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">user_agent</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3958,12 +3908,10 @@ Return int</p>
 
 
 <h4 id="thml.vid.search_google.Download" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">Download</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">Download</span><span class="p">(</span><span class="n">url_list</span><span class="p">,</span> <span class="n">out_format</span><span class="p">,</span> <span class="n">download_dir</span><span class="p">)</span></code>
 
 <a href="#thml.vid.search_google.Download" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">Download</span><span class="p">(</span><span class="n">url_list</span><span class="p">,</span> <span class="n">out_format</span><span class="p">,</span> <span class="n">download_dir</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3980,12 +3928,10 @@ Returns folder</p>
 
 
 <h4 id="thml.vid.search_google.search" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">search</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">search</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">tld</span><span class="o">=</span><span class="s1">&#39;com&#39;</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="n">tbs</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="s1">&#39;off&#39;</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pause</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">only_standard</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">extra_params</span><span class="o">=</span><span class="p">{},</span> <span class="n">tpe</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">user_agent</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="n">rights</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">download</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">download_dir</span><span class="o">=</span><span class="s1">&#39;downloads&#39;</span><span class="p">,</span> <span class="n">out_format</span><span class="o">=</span><span class="s1">&#39;html&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.search_google.search" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">search</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">tld</span><span class="o">=</span><span class="s1">&#39;com&#39;</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="n">tbs</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="s1">&#39;off&#39;</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pause</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">only_standard</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">extra_params</span><span class="o">=</span><span class="p">{},</span> <span class="n">tpe</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">user_agent</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="n">rights</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">download</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">download_dir</span><span class="o">=</span><span class="s1">&#39;downloads&#39;</span><span class="p">,</span> <span class="n">out_format</span><span class="o">=</span><span class="s1">&#39;html&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4046,7 +3992,7 @@ ARGUMENTS:
 
 
 <h3 id="thml.vid.search_image" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">search_image</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>search_image</code>
 
 
 <a href="#thml.vid.search_image" class="headerlink" title="Permanent link">¤</a></h3>
@@ -4068,7 +4014,7 @@ ARGUMENTS:
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            search_image (thml.vid.search_image.search_image)" href="#thml.vid.search_image.search_image">search_image</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            search_image(keywords, safe=False, download=False, num=10, pause=2.0, output_dir='download_image', time='past-7-days', time_range=None, rights='', similar_images=False, img_format=None, color=None, color_type=None, size='>640*480', img_type=None, url=None, specific_site=None, single_image=None, ignore_urls=None) (thml.vid.search_image.search_image)" href="#thml.vid.search_image.search_image">search_image</a></code></b>
             –
             <div class="doc-md-description">
               <p>Search and download images</p>
@@ -4095,12 +4041,10 @@ ARGUMENTS:
 
 
 <h4 id="thml.vid.search_image.search_image" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">search_image</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">search_image</span><span class="p">(</span><span class="n">keywords</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">download</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pause</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">output_dir</span><span class="o">=</span><span class="s1">&#39;download_image&#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">=</span><span class="s1">&#39;past-7-days&#39;</span><span class="p">,</span> <span class="n">time_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">rights</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">similar_images</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">img_format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">color_type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="s1">&#39;&gt;640*480&#39;</span><span class="p">,</span> <span class="n">img_type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">specific_site</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">single_image</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_urls</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thml.vid.search_image.search_image" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">search_image</span><span class="p">(</span><span class="n">keywords</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">download</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pause</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">output_dir</span><span class="o">=</span><span class="s1">&#39;download_image&#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">=</span><span class="s1">&#39;past-7-days&#39;</span><span class="p">,</span> <span class="n">time_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">rights</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">similar_images</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">img_format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">color_type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="s1">&#39;&gt;640*480&#39;</span><span class="p">,</span> <span class="n">img_type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">specific_site</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">single_image</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_urls</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4165,7 +4109,7 @@ download: Download html, pdf or image,    Takes a set of urls and tries to downl
 
 
 <h3 id="thml.vid.text_tool" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">text_tool</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>text_tool</code>
 
 
 <a href="#thml.vid.text_tool" class="headerlink" title="Permanent link">¤</a></h3>
@@ -4187,91 +4131,91 @@ download: Download html, pdf or image,    Takes a set of urls and tries to downl
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            replace_term (thml.vid.text_tool.replace_term)" href="#thml.vid.text_tool.replace_term">replace_term</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            replace_term(text: str, term_dict: dict[str] = None, term_file: str = None, use_term_lib: bool = False, whole_word: bool = True) -> str (thml.vid.text_tool.replace_term)" href="#thml.vid.text_tool.replace_term">replace_term</a></code></b>
             –
             <div class="doc-md-description">
               <p>Replace terms in text by term_dict</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            fix_broken_lines (thml.vid.text_tool.fix_broken_lines)" href="#thml.vid.text_tool.fix_broken_lines">fix_broken_lines</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            fix_broken_lines(text) (thml.vid.text_tool.fix_broken_lines)" href="#thml.vid.text_tool.fix_broken_lines">fix_broken_lines</a></code></b>
             –
             <div class="doc-md-description">
               <p>This function is used to fix broken lines in text.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            remove_footnote (thml.vid.text_tool.remove_footnote)" href="#thml.vid.text_tool.remove_footnote">remove_footnote</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            remove_footnote(text) (thml.vid.text_tool.remove_footnote)" href="#thml.vid.text_tool.remove_footnote">remove_footnote</a></code></b>
             –
             <div class="doc-md-description">
               <p>Remove all lines start with '[number]'.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            remove_paragraph (thml.vid.text_tool.remove_paragraph)" href="#thml.vid.text_tool.remove_paragraph">remove_paragraph</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            remove_paragraph(text: str, start_term: str, end_term: str, keep_end_term=True) -> str (thml.vid.text_tool.remove_paragraph)" href="#thml.vid.text_tool.remove_paragraph">remove_paragraph</a></code></b>
             –
             <div class="doc-md-description">
               <p>Remove paragraph that start with 'start_term' and end with 'end_term'.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            pre_text (thml.vid.text_tool.pre_text)" href="#thml.vid.text_tool.pre_text">pre_text</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            pre_text(filename=None) (thml.vid.text_tool.pre_text)" href="#thml.vid.text_tool.pre_text">pre_text</a></code></b>
             –
             <div class="doc-md-description">
               <p>Load preTEXT</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            read_text_pair (thml.vid.text_tool.read_text_pair)" href="#thml.vid.text_tool.read_text_pair">read_text_pair</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            read_text_pair(filename, separator=':') (thml.vid.text_tool.read_text_pair)" href="#thml.vid.text_tool.read_text_pair">read_text_pair</a></code></b>
             –
             <div class="doc-md-description">
               <p>read file that format as pair, separated by semicolon (:).</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            read_text_column (thml.vid.text_tool.read_text_column)" href="#thml.vid.text_tool.read_text_column">read_text_column</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            read_text_column(filename, separator=':', column_line=0) (thml.vid.text_tool.read_text_column)" href="#thml.vid.text_tool.read_text_column">read_text_column</a></code></b>
             –
             <div class="doc-md-description">
               <p>read file that format as pair, separated by semicolon (:).</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            read_text_news (thml.vid.text_tool.read_text_news)" href="#thml.vid.text_tool.read_text_news">read_text_news</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            read_text_news(file_text, whole_text=False, replace_Abbrev=False, file_list_abbrev=DATA_PATH + '/list_abbrev.txt') (thml.vid.text_tool.read_text_news)" href="#thml.vid.text_tool.read_text_news">read_text_news</a></code></b>
             –
             <div class="doc-md-description">
               <p>Read text</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_abbrev (thml.vid.text_tool.find_abbrev)" href="#thml.vid.text_tool.find_abbrev">find_abbrev</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_abbrev(text) (thml.vid.text_tool.find_abbrev)" href="#thml.vid.text_tool.find_abbrev">find_abbrev</a></code></b>
             –
             <div class="doc-md-description">
               <p><a href="https://stackoverflow.com/questions/60738190/regular-expression-to-find-a-series-of-uppercase-words-in-a-string">https://stackoverflow.com/questions/60738190/regular-expression-to-find-a-series-of-uppercase-words-in-a-string</a></p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            read_text_subtitle (thml.vid.text_tool.read_text_subtitle)" href="#thml.vid.text_tool.read_text_subtitle">read_text_subtitle</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            read_text_subtitle(filename, format_=None) (thml.vid.text_tool.read_text_subtitle)" href="#thml.vid.text_tool.read_text_subtitle">read_text_subtitle</a></code></b>
             –
             <div class="doc-md-description">
               <p>Read caption file, support format: json, rst</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            json_caption_to_text (thml.vid.text_tool.json_caption_to_text)" href="#thml.vid.text_tool.json_caption_to_text">json_caption_to_text</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            json_caption_to_text(transcript_dict, out_file=None) (thml.vid.text_tool.json_caption_to_text)" href="#thml.vid.text_tool.json_caption_to_text">json_caption_to_text</a></code></b>
             –
             <div class="doc-md-description">
               <p>transcript (dict): download by youtubesearchpython.Transcript["segments"]</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            json_caption_unify (thml.vid.text_tool.json_caption_unify)" href="#thml.vid.text_tool.json_caption_unify">json_caption_unify</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            json_caption_unify(transcript_dict) (thml.vid.text_tool.json_caption_unify)" href="#thml.vid.text_tool.json_caption_unify">json_caption_unify</a></code></b>
             –
             <div class="doc-md-description">
               <p>transcript (dict): download by youtubesearchpython.Transcript["segments"]</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            convert_json_to_srt (thml.vid.text_tool.convert_json_to_srt)" href="#thml.vid.text_tool.convert_json_to_srt">convert_json_to_srt</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            convert_json_to_srt(transcript_dict, fps=25, out_file='transcript_rst.rst') (thml.vid.text_tool.convert_json_to_srt)" href="#thml.vid.text_tool.convert_json_to_srt">convert_json_to_srt</a></code></b>
             –
             <div class="doc-md-description">
               <p>transcript (dict): download by youtubesearchpython.Transcript["segments"]</p>
@@ -4285,8 +4229,7 @@ download: Download html, pdf or image,    Takes a set of urls and tries to downl
 <p><span class="doc-section-title">Attributes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            DATA_PATH
-
+          <b><code><a class="autorefs autorefs-internal" title="            DATA_PATH = os.path.dirname(os.path.abspath(__file__)) + '/data'
 
   
       module-attribute
@@ -4297,8 +4240,7 @@ download: Download html, pdf or image,    Takes a set of urls and tries to downl
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            not_use
-
+          <b><code><a class="autorefs autorefs-internal" title="            not_use = {'(?<!\\n) \\s+': ' ', '  ': ' ', '(?<!\n) {2,4}': ' ', '\\n(?!#)': ' '}
 
   
       module-attribute
@@ -4309,8 +4251,7 @@ download: Download html, pdf or image,    Takes a set of urls and tries to downl
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            term_lib
-
+          <b><code><a class="autorefs autorefs-internal" title="            term_lib = {'\\[\\d+\\]': '', '\\s+\\.': '.', '\\s+\\,': ',', '\\s+\\!': '!', '\\s+\\:': ':', '\\s+\\;': ';'}
 
   
       module-attribute
@@ -4337,16 +4278,14 @@ download: Download html, pdf or image,    Takes a set of urls and tries to downl
 
 
 <h4 id="thml.vid.text_tool.DATA_PATH" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">DATA_PATH</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">DATA_PATH</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;/data&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
   </span>
 
 <a href="#thml.vid.text_tool.DATA_PATH" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">DATA_PATH</span> <span class="o">=</span> <span class="n">dirname</span><span class="p">(</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;/data&#39;</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4360,16 +4299,14 @@ download: Download html, pdf or image,    Takes a set of urls and tries to downl
 
 
 <h4 id="thml.vid.text_tool.not_use" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">not_use</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">not_use</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;(?&lt;!</span><span class="se">\\</span><span class="s1">n) </span><span class="se">\\</span><span class="s1">s+&#39;</span><span class="p">:</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;  &#39;</span><span class="p">:</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;(?&lt;!</span><span class="se">\n</span><span class="s1">) {2,4}&#39;</span><span class="p">:</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">n(?!#)&#39;</span><span class="p">:</span> <span class="s1">&#39; &#39;</span><span class="p">}</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
   </span>
 
 <a href="#thml.vid.text_tool.not_use" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">not_use</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;(?&lt;!</span><span class="se">\\</span><span class="s1">n) </span><span class="se">\\</span><span class="s1">s+&#39;</span><span class="p">:</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;  &#39;</span><span class="p">:</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;(?&lt;!</span><span class="se">\n</span><span class="s1">) {2,4}&#39;</span><span class="p">:</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">n(?!#)&#39;</span><span class="p">:</span> <span class="s1">&#39; &#39;</span><span class="p">}</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4383,16 +4320,14 @@ download: Download html, pdf or image,    Takes a set of urls and tries to downl
 
 
 <h4 id="thml.vid.text_tool.term_lib" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">term_lib</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">term_lib</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">[</span><span class="se">\\</span><span class="s1">d+</span><span class="se">\\</span><span class="s1">]&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">s+</span><span class="se">\\</span><span class="s1">.&#39;</span><span class="p">:</span> <span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">s+</span><span class="se">\\</span><span class="s1">,&#39;</span><span class="p">:</span> <span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">s+</span><span class="se">\\</span><span class="s1">!&#39;</span><span class="p">:</span> <span class="s1">&#39;!&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">s+</span><span class="se">\\</span><span class="s1">:&#39;</span><span class="p">:</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">s+</span><span class="se">\\</span><span class="s1">;&#39;</span><span class="p">:</span> <span class="s1">&#39;;&#39;</span><span class="p">}</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
   </span>
 
 <a href="#thml.vid.text_tool.term_lib" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">term_lib</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">[</span><span class="se">\\</span><span class="s1">d+</span><span class="se">\\</span><span class="s1">]&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">s+</span><span class="se">\\</span><span class="s1">.&#39;</span><span class="p">:</span> <span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">s+</span><span class="se">\\</span><span class="s1">,&#39;</span><span class="p">:</span> <span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">s+</span><span class="se">\\</span><span class="s1">!&#39;</span><span class="p">:</span> <span class="s1">&#39;!&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">s+</span><span class="se">\\</span><span class="s1">:&#39;</span><span class="p">:</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">s+</span><span class="se">\\</span><span class="s1">;&#39;</span><span class="p">:</span> <span class="s1">&#39;;&#39;</span><span class="p">}</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4408,12 +4343,10 @@ download: Download html, pdf or image,    Takes a set of urls and tries to downl
 
 
 <h4 id="thml.vid.text_tool.replace_term" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">replace_term</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">replace_term</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">term_dict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">term_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">use_term_lib</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">whole_word</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
 <a href="#thml.vid.text_tool.replace_term" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">replace_term</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">term_dict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">term_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">use_term_lib</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">whole_word</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4433,12 +4366,10 @@ Args:
 
 
 <h4 id="thml.vid.text_tool.fix_broken_lines" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">fix_broken_lines</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">fix_broken_lines</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#thml.vid.text_tool.fix_broken_lines" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fix_broken_lines</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4457,12 +4388,10 @@ Args:
 
 
 <h4 id="thml.vid.text_tool.remove_footnote" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">remove_footnote</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">remove_footnote</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#thml.vid.text_tool.remove_footnote" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">remove_footnote</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4478,12 +4407,10 @@ Args:
 
 
 <h4 id="thml.vid.text_tool.remove_paragraph" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">remove_paragraph</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">remove_paragraph</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">start_term</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">end_term</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">keep_end_term</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
 <a href="#thml.vid.text_tool.remove_paragraph" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">remove_paragraph</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">start_term</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">end_term</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">keep_end_term</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4500,12 +4427,10 @@ Args:
 
 
 <h4 id="thml.vid.text_tool.pre_text" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">pre_text</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">pre_text</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thml.vid.text_tool.pre_text" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">pre_text</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4548,12 +4473,10 @@ Args:
 
 
 <h4 id="thml.vid.text_tool.read_text_pair" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">read_text_pair</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">read_text_pair</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">separator</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.text_tool.read_text_pair" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">read_text_pair</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">separator</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4594,12 +4517,10 @@ Args:
 
 
 <h4 id="thml.vid.text_tool.read_text_column" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">read_text_column</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">read_text_column</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">separator</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">column_line</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></code>
 
 <a href="#thml.vid.text_tool.read_text_column" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">read_text_column</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">separator</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">column_line</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4640,12 +4561,10 @@ Args:
 
 
 <h4 id="thml.vid.text_tool.read_text_news" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">read_text_news</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">read_text_news</span><span class="p">(</span><span class="n">file_text</span><span class="p">,</span> <span class="n">whole_text</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">replace_Abbrev</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">file_list_abbrev</span><span class="o">=</span><span class="n">DATA_PATH</span> <span class="o">+</span> <span class="s1">&#39;/list_abbrev.txt&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.text_tool.read_text_news" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">read_text_news</span><span class="p">(</span><span class="n">file_text</span><span class="p">,</span> <span class="n">whole_text</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">replace_Abbrev</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">file_list_abbrev</span><span class="o">=</span><span class="n">DATA_PATH</span> <span class="o">+</span> <span class="s1">&#39;/list_abbrev.txt&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4670,12 +4589,10 @@ Args:
 
 
 <h4 id="thml.vid.text_tool.find_abbrev" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">find_abbrev</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">find_abbrev</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#thml.vid.text_tool.find_abbrev" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_abbrev</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4691,12 +4608,10 @@ Args:
 
 
 <h4 id="thml.vid.text_tool.read_text_subtitle" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">read_text_subtitle</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">read_text_subtitle</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">format_</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thml.vid.text_tool.read_text_subtitle" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">read_text_subtitle</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">format_</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4712,12 +4627,10 @@ Args:
 
 
 <h4 id="thml.vid.text_tool.json_caption_to_text" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">json_caption_to_text</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">json_caption_to_text</span><span class="p">(</span><span class="n">transcript_dict</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thml.vid.text_tool.json_caption_to_text" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">json_caption_to_text</span><span class="p">(</span><span class="n">transcript_dict</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4733,12 +4646,10 @@ Args:
 
 
 <h4 id="thml.vid.text_tool.json_caption_unify" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">json_caption_unify</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">json_caption_unify</span><span class="p">(</span><span class="n">transcript_dict</span><span class="p">)</span></code>
 
 <a href="#thml.vid.text_tool.json_caption_unify" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">json_caption_unify</span><span class="p">(</span><span class="n">transcript_dict</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4754,12 +4665,10 @@ Args:
 
 
 <h4 id="thml.vid.text_tool.convert_json_to_srt" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">convert_json_to_srt</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">convert_json_to_srt</span><span class="p">(</span><span class="n">transcript_dict</span><span class="p">,</span> <span class="n">fps</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;transcript_rst.rst&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.text_tool.convert_json_to_srt" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">convert_json_to_srt</span><span class="p">(</span><span class="n">transcript_dict</span><span class="p">,</span> <span class="n">fps</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="s1">&#39;transcript_rst.rst&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4785,7 +4694,7 @@ fps (int): Frame per second. Can check using moviepy package</p>
 
 
 <h3 id="thml.vid.tts" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">tts</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>tts</code>
 
 
 <a href="#thml.vid.tts" class="headerlink" title="Permanent link">¤</a></h3>
@@ -4807,28 +4716,28 @@ fps (int): Frame per second. Can check using moviepy package</p>
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            tts_edge (thml.vid.tts.tts_edge)" href="#thml.vid.tts.tts_edge">tts_edge</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            tts_edge(text: str, voice: str = 'vi-VN-NamMinhNeural', rate: int = 0, volume: int = 0, pitch: int = 0, audio_file: str = 'voice.mp3') (thml.vid.tts.tts_edge)" href="#thml.vid.tts.tts_edge">tts_edge</a></code></b>
             –
             <div class="doc-md-description">
               <p>TTS using Edge browser.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            tts_edge_voices (thml.vid.tts.tts_edge_voices)" href="#thml.vid.tts.tts_edge_voices">tts_edge_voices</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            tts_edge_voices(lang: str = 'vi') (thml.vid.tts.tts_edge_voices)" href="#thml.vid.tts.tts_edge_voices">tts_edge_voices</a></code></b>
             –
             <div class="doc-md-description">
               <p>Get available voices in Edge browser.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            tts_gTTS (thml.vid.tts.tts_gTTS)" href="#thml.vid.tts.tts_gTTS">tts_gTTS</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            tts_gTTS(text, lang='en', audio_file='voice.mp3') (thml.vid.tts.tts_gTTS)" href="#thml.vid.tts.tts_gTTS">tts_gTTS</a></code></b>
             –
             <div class="doc-md-description">
               <p>Args:</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            tts_off_pyttsx3 (thml.vid.tts.tts_off_pyttsx3)" href="#thml.vid.tts.tts_off_pyttsx3">tts_off_pyttsx3</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            tts_off_pyttsx3(text, lang='vi', voice_name='', voice_id=None, rate=150, vol=1.0, audio_file='voice.mp3') (thml.vid.tts.tts_off_pyttsx3)" href="#thml.vid.tts.tts_off_pyttsx3">tts_off_pyttsx3</a></code></b>
             –
             <div class="doc-md-description">
               <p>Convert text to speech using Windows' voices.</p>
@@ -4855,12 +4764,10 @@ fps (int): Frame per second. Can check using moviepy package</p>
 
 
 <h4 id="thml.vid.tts.tts_edge" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">tts_edge</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">tts_edge</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">voice</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;vi-VN-NamMinhNeural&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">volume</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">pitch</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">audio_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;voice.mp3&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.tts.tts_edge" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">tts_edge</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">voice</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;vi-VN-NamMinhNeural&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">volume</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">pitch</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">audio_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;voice.mp3&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4883,12 +4790,10 @@ Args:
 
 
 <h4 id="thml.vid.tts.tts_edge_voices" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">tts_edge_voices</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">tts_edge_voices</span><span class="p">(</span><span class="n">lang</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;vi&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.tts.tts_edge_voices" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">tts_edge_voices</span><span class="p">(</span><span class="n">lang</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;vi&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4904,12 +4809,10 @@ Args:
 
 
 <h4 id="thml.vid.tts.tts_gTTS" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">tts_gTTS</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">tts_gTTS</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="n">audio_file</span><span class="o">=</span><span class="s1">&#39;voice.mp3&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.tts.tts_gTTS" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">tts_gTTS</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="n">audio_file</span><span class="o">=</span><span class="s1">&#39;voice.mp3&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4937,12 +4840,10 @@ Args:
 
 
 <h4 id="thml.vid.tts.tts_off_pyttsx3" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">tts_off_pyttsx3</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">tts_off_pyttsx3</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span><span class="p">,</span> <span class="n">voice_name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">voice_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">vol</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">audio_file</span><span class="o">=</span><span class="s1">&#39;voice.mp3&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.vid.tts.tts_off_pyttsx3" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">tts_off_pyttsx3</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span><span class="p">,</span> <span class="n">voice_name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">voice_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">vol</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">audio_file</span><span class="o">=</span><span class="s1">&#39;voice.mp3&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
